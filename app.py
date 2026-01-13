@@ -21,7 +21,8 @@ st.subheader("Dataset Preview")
 st.dataframe(df.head(15), use_container_width=True)
 
 # ✅ Change this if your target column name is different
-TARGET = "Loan_Status"
+TARGET = "Loan_Approved"
+
 
 if TARGET not in df.columns:
     st.error(f"TARGET column '{TARGET}' not found. Available columns: {list(df.columns)}")
